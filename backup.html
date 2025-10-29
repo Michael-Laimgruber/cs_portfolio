@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python - Coding Portfolio Projects</title>
+
+  <!-- Prism Dark Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-vsc-dark-plus.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Prism Core + Python -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="python.html" class="active">Python</a>
+      <a href="java.html">Java</a>
+      <a href="csharp.html">C#</a>
+      <a href="sql.html">SQL</a>
+      <a href="flask.html">Flask</a>
+    </nav>
+  </header>
+
+  <main>
+
+
+<!-- ================= PROJECT 1 ================= -->
+<div class="project">
+  <!-- Project Header -->
+  <div class="project-title">
+    <span>Project 1 - Python</span>
+    <a href="https://github.com/yourusername/project1" target="_blank" class="github-link">[GitHub]</a>
+    <button class="toggle-btn" onclick="toggleSection(this)">[ v ]</button>
+  </div>
+
+  <div class="project-content">
+
+    <!-- Assignment Section -->
+    <div class="assignment-header">
+      <span>Assignment</span>
+      <button class="toggle-btn" onclick="toggleSection(this)">[ v ]</button>
+    </div>
+    <div class="assignment-text">
+      <p>This project demonstrates input/output handling and simple functions in Python.</p>
+    </div>
+
+    <!-- File Tree Section -->
+    <div class="file-tree-header">
+      <span>File Tree</span>
+      <button class="toggle-btn" onclick="toggleSection(this)">[ v ]</button>
+    </div>
+    <div class="file-tree-content">
+<pre>
+cs-portfolio/
+├─ main.py
+├─ utils.py
+└─ README.md
+</pre>
+    </div>
+
+    <!-- Files Section -->
+    <div class="files-header">
+      <span>Files</span>
+      <button class="toggle-btn" onclick="toggleSection(this)">[ v ]</button>
+    </div>
+    <div class="files-content">
+      <!-- File 1 -->
+      <div class="code-header">
+        <span>main.py</span>
+        <button class="toggle-btn" onclick="toggleSection(this)">[ v ]</button>
+      </div>
+      <div class="code-content">
+        <div class="code-container">
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          <pre><code class="language-python">
+def main():
+    name = input("Enter your name: ")
+    print(f"Hello, {name}")
+
+if __name__ == "__main__":
+    main()
+          </code></pre>
+        </div>
+      </div>
+
+      <!-- File 2 -->
+      <div class="code-header">
+        <span>utils.py</span>
+        <button class="toggle-btn" onclick="toggleSection(this)">[ v ]</button>
+      </div>
+      <div class="code-content">
+        <div class="code-container">
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+          <pre><code class="language-python">
+def add(a, b):
+    return a + b
+          </code></pre>
+        </div>
+      </div>
+    </div> <!-- end Files section -->
+
+  </div> <!-- project-content -->
+</div> <!-- project -->
+
+
+
+
+
+
+  </main>
+</body>
+</html>

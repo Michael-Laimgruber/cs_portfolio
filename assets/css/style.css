@@ -1,0 +1,185 @@
+/* ===================== Body & Navigation ===================== */
+body {
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  display: flex;
+  background-color: #2d2d2d;
+  padding: 12px 24px;
+}
+
+.top-nav a {
+  color: #f8f8f2;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+  text-decoration: underline;
+}
+
+main {
+  padding: 24px;
+}
+
+/* ===================== Accordion Sections ===================== */
+.project,
+.assignment-text,
+.file-tree-header,
+.file-tree-content,
+.code-header,
+.code-content {
+  margin-top: 8px;
+}
+
+/* -------------------- PROJECT -------------------- */
+.project {
+  background-color: #1e1e1e; /* big dark box */
+  border-radius: 8px;
+  padding: 0;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #2d2d2d;
+  padding: 8px 12px;
+  border-radius: 8px 8px 0 0;
+  color: #f8f8f2;
+}
+
+.toggle-btn {
+  background-color: #555555;
+  color: #fff;
+  border: none;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #666666;
+}
+
+.project-content {
+  display: none;
+  padding: 12px;
+  background-color: #2a2a2a;
+  border-radius: 0 0 8px 8px;
+}
+
+/* -------------------- ASSIGNMENT TEXT -------------------- */
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.assignment-text {
+  display: none;
+  background-color: #4a4a4a;
+  padding: 8px 12px;
+}
+
+/* -------------------- FILE TREE -------------------- */
+.file-tree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+.file-tree-content {
+  display: none;
+  background-color: #4a4a4a;
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+
+/* -------------------- FILES -------------------- */
+.files-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+.files-content {
+  display: none;
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #555555;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #f8f8f2;
+  margin-top: 8px;  /* spacing between code files */
+  border-radius: 6px;
+}
+
+.code-content {
+  display: none;
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+.code-container {
+  position: relative;
+  background-color: #4a4a4a;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 4px;
+  overflow: visible;
+}
+
+.code-container pre {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #666666;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #777777;
+}
